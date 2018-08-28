@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Global Schedules
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/apis.md
 specificationVersion: "0.14"
 apis:
@@ -52,6 +52,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-get-openapi.md
+- name: DevTestLabsClient - Global Schedules Create Or Update
+  x-api-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-put
+  description: Create or replace an existing schedule.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-devtest-integrate.png
+  humanURL: https://azure.microsoft.com/en-us/services/devtest-lab/
+  baseURL: ://management.azure.com//
+  tags: Testing, Microsoft, Orchestration, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-put-openapi.md
 - name: DevTestLabsClient - Global Schedules Delete
   x-api-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-delete
   description: Delete schedule.
@@ -65,6 +76,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-delete-openapi.md
+- name: DevTestLabsClient - Global Schedules Update
+  x-api-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-patch
+  description: Modify properties of schedules.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-devtest-integrate.png
+  humanURL: https://azure.microsoft.com/en-us/services/devtest-lab/
+  baseURL: ://management.azure.com//
+  tags: Testing, Microsoft, Orchestration, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-patch-openapi.md
 - name: DevTestLabsClient - Global Schedules Execute
   x-api-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesnameexecute-post
   description: Execute a schedule. This operation can take a while to complete.
@@ -78,6 +100,18 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesnameexecute-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesnameexecute-post-openapi.md
+- name: DevTestLabsClient - Global Schedules Retarget
+  x-api-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesnameretarget-post
+  description: Updates a schedule's target resource Id. This operation can take a
+    while to complete.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-devtest-integrate.png
+  humanURL: https://azure.microsoft.com/en-us/services/devtest-lab/
+  baseURL: ://management.azure.com//
+  tags: Testing, Microsoft, Orchestration, Stack Network, API Service Provider, API
+    Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/global-schedules/master/_listings/azure-devtest-labs/subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesnameretarget-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://azure.data.lake.store.api.gallery.streamdata.io

@@ -3,8 +3,9 @@ swagger: "2.0"
 x-collection-name: Azure DevTest Labs
 x-complete: 0
 info:
-  title: Azure DevTest Labs API Global Schedules Execute
-  description: Execute a schedule. This operation can take a while to complete.
+  title: Azure DevTest Labs API Global Schedules Retarget
+  description: Updates a schedule's target resource Id. This operation can take a
+    while to complete.
   version: 1.0.0
 host: management.azure.com
 basePath: /
@@ -157,6 +158,29 @@ paths:
         description: The name of the schedule
       - in: query
         name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Global Schedules
+  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevTestLab/schedules/{name}/retarget:
+    post:
+      summary: Global Schedules Retarget
+      description: Updates a schedule's target resource Id. This operation can take
+        a while to complete.
+      operationId: GlobalSchedules_Retarget
+      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesnameretarget-post
+      parameters:
+      - in: path
+        name: name
+        description: The name of the schedule
+      - in: query
+        name: No Name
+      - in: body
+        name: retargetScheduleProperties
+        description: Properties for retargeting a virtual machine schedule
+        schema:
+          $ref: '#/definitions/holder'
       responses:
         200:
           description: OK

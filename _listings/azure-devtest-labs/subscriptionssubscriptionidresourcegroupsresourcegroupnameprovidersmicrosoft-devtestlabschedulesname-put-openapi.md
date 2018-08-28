@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: Azure DevTest Labs
 x-complete: 0
 info:
-  title: Azure DevTest Labs API Global Schedules Execute
-  description: Execute a schedule. This operation can take a while to complete.
+  title: Azure DevTest Labs API Global Schedules Create Or Update
+  description: Create or replace an existing schedule.
   version: 1.0.0
 host: management.azure.com
 basePath: /
@@ -103,60 +103,6 @@ paths:
         description: A schedule
         schema:
           $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Global Schedules
-    delete:
-      summary: Global Schedules Delete
-      description: Delete schedule.
-      operationId: GlobalSchedules_Delete
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-delete
-      parameters:
-      - in: path
-        name: name
-        description: The name of the schedule
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Global Schedules
-    patch:
-      summary: Global Schedules Update
-      description: Modify properties of schedules.
-      operationId: GlobalSchedules_Update
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesname-patch
-      parameters:
-      - in: path
-        name: name
-        description: The name of the schedule
-      - in: query
-        name: No Name
-      - in: body
-        name: schedule
-        description: A schedule
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Global Schedules
-  /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DevTestLab/schedules/{name}/execute:
-    post:
-      summary: Global Schedules Execute
-      description: Execute a schedule. This operation can take a while to complete.
-      operationId: GlobalSchedules_Execute
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-devtestlabschedulesnameexecute-post
-      parameters:
-      - in: path
-        name: name
-        description: The name of the schedule
-      - in: query
-        name: No Name
       responses:
         200:
           description: OK
